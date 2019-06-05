@@ -27,7 +27,6 @@ let partition = (arr, pivot, left, right) => {
   }
 
   swap(arr, right, index);
-
   return index;
 };
 

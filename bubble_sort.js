@@ -4,9 +4,7 @@ let bubbleSort = () => {
 
   for (let lastUnsorted = intArr.length - 1; lastUnsorted > 0; lastUnsorted--) {
     for (let i = 0; i < lastUnsorted; i++) {
-      if (intArr[i] > intArr[i + 1]) {
-        swap(intArr, i, i + 1);
-      }
+      if (intArr[i] > intArr[i + 1]) swap(intArr, i, i + 1);
     }
   }
   console.log(`Sorted ===> ${intArr}`);
