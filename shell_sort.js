@@ -3,9 +3,9 @@ let shellSort = () => {
   console.log(`Unsorted ===> ${intArr}`);
 
   for (
-    let gap = Math.round(intArr.length / 2);
+    let gap = Math.floor(intArr.length / 2);
     gap > 0;
-    Math.round((gap /= 2))
+    Math.floor((gap /= 2))
   ) {
     for (let i = gap; i < intArr.length; i++) {
       let newElement = intArr[i];
