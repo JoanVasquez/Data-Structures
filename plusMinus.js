@@ -1,26 +1,21 @@
-function plusMinus(arr) {
-  let positives = 0,
-    negatives = 0,
-    zeros = 0;
-  const len = arr.length || 0;
+let plusMinus = arr => {
+  let positives = 0;
+  let negatives = 0;
+  let zeros = 0;
 
-  if (len > 0 && len <= 100) {
-    arr.map((elem, key) => {
-      if (elem > 0) {
-        positives++;
-      } else if (elem < 0) {
-        negatives++;
-      } else {
-        zeros++;
-      }
+  const n = arr.length;
 
-      return elem;
+  if (n > 0 && n <= 100) {
+    arr.forEach(item => {
+      if (item > 0) positives++;
+      else if (item < 0) negatives++;
+      else zeros++;
     });
   }
 
-  console.log(positives / len || 0);
-  console.log(negatives / len || 0);
-  console.log(zeros / len || 0);
-}
+  console.log(positives / n);
+  console.log(negatives / n);
+  console.log(zeros / n);
+};
 
 plusMinus([-4, 3, -9, 0, 4, 1]);
