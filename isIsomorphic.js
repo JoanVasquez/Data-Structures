@@ -21,4 +21,4 @@ let isIsomorphic = (s, t) => {
   return true;
 };
 
-console.log(isIsomorphic("foo", "bar"));
+console.log(isIsomorphic("egg", "add"));
