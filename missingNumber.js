@@ -9,5 +9,5 @@ let getMissingNumbers = (arr, highestNum) => {
   return missingNums;
 };
 
-let arr = [1, 2, 3, 5];
+let arr = [1, 2, 5];
 console.log(getMissingNumbers(arr, Math.max(...arr)));
